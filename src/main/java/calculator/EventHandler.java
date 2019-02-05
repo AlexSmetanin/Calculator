@@ -46,6 +46,7 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
+        System.out.println("Element text: " + arg2);
     }
 
     @Override
@@ -113,16 +114,13 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeScript(String s, WebDriver webDriver) {
-
     }
 
     @Override
     public void afterScript(String s, WebDriver webDriver) {
-
     }
 
     @Override
     public void onException(Throwable throwable, WebDriver webDriver) {
-
     }
 }

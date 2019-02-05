@@ -10,6 +10,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+// Get driver for different browsers
 public abstract class BaseTest {
     private static WebDriver getDriver() {
         String browser = Properties.getBrowser();
