@@ -1,5 +1,6 @@
 package calculator.tests;
 
+import calculator.BaseTest;
 import calculator.utils.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -67,7 +68,7 @@ public class Calculator {
     public void readFile(String FileName) {
         List<String> lines = null;
         try {
-            lines = Files.readAllLines(Paths.get(FileName), StandardCharsets.UTF_8);
+            lines = Files.readAllLines(Paths.get(this.getClass().getResource(FileName).getPath().replaceFirst("^/(.:/)", "$1")), StandardCharsets.UTF_8); //Paths.get(FileName)
         } catch (IOException e) {
             e.printStackTrace();
         }

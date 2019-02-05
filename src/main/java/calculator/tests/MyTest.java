@@ -15,6 +15,6 @@ public class MyTest extends BaseTest {
         calculator.standardTest();
         calculator.scienceTest();
         calculator.getResult();
-        //quitDriver(driver);
+        quitDriver(driver);
     }
 }
